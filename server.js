@@ -14,13 +14,8 @@ const db = knex({
   connection: {
     connectionString: process.env.DATABASE_URL,
     ssl: true
-    // host : 'postgresql-convex-30664',
-    // user : 'postgres',
-    // password : 'test',
-    // database : 'smartbrain'
   }
 });
-
 const app = express();
 
 app.use(bodyParser.json());
