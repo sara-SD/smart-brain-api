@@ -16,6 +16,7 @@ const db = knex({
     ssl: true
   }
 });
+
 const app = express();
 
 app.use(bodyParser.json());
